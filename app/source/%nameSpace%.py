@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello():
     retVal = {
         "msg":"hello world!",
-        "host":"%s" % socket.gethostname()
+        "host":"\\%s" % socket.gethostname()
 
     }
     return json.dumps(retVal)
