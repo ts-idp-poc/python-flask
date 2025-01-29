@@ -44,7 +44,7 @@ spec:
             chmod -R 600 ~/.ssh
             cd /workdir
             rm -rf *
-            git clone git@github.com:ts-idp-poc/%nameSpace%-app.git
+            git clone git@github.com:ts-idp-poc2/%nameSpace%-app.git
             cd /workdir/%nameSpace%-app
             LATEST_COMMIT=$(git rev-parse --short HEAD)
             echo -n $LATEST_COMMIT > /workdir/tag.txt
@@ -88,7 +88,7 @@ spec:
             echo "StrictHostKeyChecking no" >> ~/.ssh/config
             chmod -R 600 ~/.ssh
             cd /workdir
-            git clone git@github.com:ts-idp-poc/%nameSpace%-infra.git
+            git clone git@github.com:ts-idp-poc2/%nameSpace%-infra.git
             cd %nameSpace%-infra
             git config user.name argoworkflow-cicd
             git config user.email argoworkflow-cicd@nohost.domain.com
